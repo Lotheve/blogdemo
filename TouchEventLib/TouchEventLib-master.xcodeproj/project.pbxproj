@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E40814E1F4E7FA00057AF80 /* BackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4081431F4E7FA00057AF80 /* BackView.m */; };
+		6E40814F1F4E7FA00057AF80 /* GLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4081451F4E7FA00057AF80 /* GLButton.m */; };
+		6E4081501F4E7FA00057AF80 /* GLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4081471F4E7FA00057AF80 /* GLCell.m */; };
+		6E4081511F4E7FA00057AF80 /* GLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4081491F4E7FA00057AF80 /* GLTableView.m */; };
+		6E4081521F4E7FA00057AF80 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E40814B1F4E7FA00057AF80 /* GLView.m */; };
+		6E4081531F4E7FA00057AF80 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E40814D1F4E7FA00057AF80 /* GLViewController.m */; };
+		6E4081561F4E7FAE0057AF80 /* TouchEventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4081551F4E7FAE0057AF80 /* TouchEventHook.m */; };
+		6E56DE5C1F49710D009A8905 /* GLWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E56DE5B1F49710D009A8905 /* GLWindow.m */; };
+		6E56DE5F1F4976F9009A8905 /* GLApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E56DE5E1F4976F9009A8905 /* GLApplication.m */; };
+		6E56DE621F497FDF009A8905 /* GL2Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E56DE611F497FDF009A8905 /* GL2Window.m */; };
+		6E5986CE1F4D276500DA7FFE /* LXFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5986CD1F4D276500DA7FFE /* LXFViewController.m */; };
+		6E5986D11F4D278C00DA7FFE /* YellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5986D01F4D278C00DA7FFE /* YellowView.m */; };
+		6E5986D41F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5986D31F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.m */; };
+		6E5E86241F40B456008EEA42 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E86231F40B456008EEA42 /* CircleButton.m */; };
+		6E5E86271F40B515008EEA42 /* CustomeTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5E86261F40B515008EEA42 /* CustomeTabBar.m */; };
+		6EAA4F211F500503007D2D33 /* LXFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA4F201F500503007D2D33 /* LXFButton.m */; };
+		6EAA4F241F500528007D2D33 /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA4F231F500528007D2D33 /* BlueView.m */; };
+		6EAA4F2A1F500655007D2D33 /* CLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA4F291F500655007D2D33 /* CLViewController.m */; };
+		6EAA4F2D1F501EDC007D2D33 /* CLTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAA4F2C1F501EDC007D2D33 /* CLTapGestureRecognizer.m */; };
+		6EAFD9621F3C2A3B0077CF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9611F3C2A3B0077CF29 /* main.m */; };
+		6EAFD9651F3C2A3B0077CF29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9641F3C2A3B0077CF29 /* AppDelegate.m */; };
+		6EAFD9681F3C2A3B0077CF29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9671F3C2A3B0077CF29 /* ViewController.m */; };
+		6EAFD96B1F3C2A3B0077CF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFD9691F3C2A3B0077CF29 /* Main.storyboard */; };
+		6EAFD96D1F3C2A3B0077CF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFD96C1F3C2A3B0077CF29 /* Assets.xcassets */; };
+		6EAFD9701F3C2A3B0077CF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFD96E1F3C2A3B0077CF29 /* LaunchScreen.storyboard */; };
+		6EAFD97B1F3C2A3B0077CF29 /* TouchEventLib_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD97A1F3C2A3B0077CF29 /* TouchEventLib_masterTests.m */; };
+		6EAFD9861F3C2A3B0077CF29 /* TouchEventLib_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9851F3C2A3B0077CF29 /* TouchEventLib_masterUITests.m */; };
+		6EAFD99F1F3C3C4A0077CF29 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9981F3C3C4A0077CF29 /* AView.m */; };
+		6EAFD9A01F3C3C4A0077CF29 /* BView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD99A1F3C3C4A0077CF29 /* BView.m */; };
+		6EAFD9A11F3C3C4A0077CF29 /* CView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD99C1F3C3C4A0077CF29 /* CView.m */; };
+		6EAFD9A21F3C3C4A0077CF29 /* DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD99E1F3C3C4A0077CF29 /* DView.m */; };
+		6EAFD9A51F3C42760077CF29 /* EView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9A41F3C42760077CF29 /* EView.m */; };
+		6EAFD9A81F3C4ABC0077CF29 /* FView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFD9A71F3C4ABC0077CF29 /* FView.m */; };
+		6EF833231F4C00D600133DAD /* GLGusture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF833221F4C00D600133DAD /* GLGusture.m */; };
+		6EFC61DC1F3ED93A00BE50AC /* MovedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC61DA1F3ED93A00BE50AC /* MovedView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EAFD9771F3C2A3B0077CF29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EAFD9551F3C2A3B0077CF29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EAFD95C1F3C2A3B0077CF29;
+			remoteInfo = "TouchEventLib-master";
+		};
+		6EAFD9821F3C2A3B0077CF29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EAFD9551F3C2A3B0077CF29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EAFD95C1F3C2A3B0077CF29;
+			remoteInfo = "TouchEventLib-master";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E4081421F4E7FA00057AF80 /* BackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackView.h; sourceTree = "<group>"; };
+		6E4081431F4E7FA00057AF80 /* BackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackView.m; sourceTree = "<group>"; };
+		6E4081441F4E7FA00057AF80 /* GLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLButton.h; sourceTree = "<group>"; };
+		6E4081451F4E7FA00057AF80 /* GLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLButton.m; sourceTree = "<group>"; };
+		6E4081461F4E7FA00057AF80 /* GLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCell.h; sourceTree = "<group>"; };
+		6E4081471F4E7FA00057AF80 /* GLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCell.m; sourceTree = "<group>"; };
+		6E4081481F4E7FA00057AF80 /* GLTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTableView.h; sourceTree = "<group>"; };
+		6E4081491F4E7FA00057AF80 /* GLTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTableView.m; sourceTree = "<group>"; };
+		6E40814A1F4E7FA00057AF80 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		6E40814B1F4E7FA00057AF80 /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		6E40814C1F4E7FA00057AF80 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		6E40814D1F4E7FA00057AF80 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		6E4081541F4E7FAE0057AF80 /* TouchEventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventHook.h; sourceTree = "<group>"; };
+		6E4081551F4E7FAE0057AF80 /* TouchEventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventHook.m; sourceTree = "<group>"; };
+		6E56DE5A1F49710D009A8905 /* GLWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLWindow.h; sourceTree = "<group>"; };
+		6E56DE5B1F49710D009A8905 /* GLWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLWindow.m; sourceTree = "<group>"; };
+		6E56DE5D1F4976F9009A8905 /* GLApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLApplication.h; sourceTree = "<group>"; };
+		6E56DE5E1F4976F9009A8905 /* GLApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLApplication.m; sourceTree = "<group>"; };
+		6E56DE601F497FDF009A8905 /* GL2Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GL2Window.h; sourceTree = "<group>"; };
+		6E56DE611F497FDF009A8905 /* GL2Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GL2Window.m; sourceTree = "<group>"; };
+		6E5986CC1F4D276500DA7FFE /* LXFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFViewController.h; sourceTree = "<group>"; };
+		6E5986CD1F4D276500DA7FFE /* LXFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFViewController.m; sourceTree = "<group>"; };
+		6E5986CF1F4D278C00DA7FFE /* YellowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowView.h; sourceTree = "<group>"; };
+		6E5986D01F4D278C00DA7FFE /* YellowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowView.m; sourceTree = "<group>"; };
+		6E5986D21F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFTapGestureRecognizer.h; sourceTree = "<group>"; };
+		6E5986D31F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFTapGestureRecognizer.m; sourceTree = "<group>"; };
+		6E5E86221F40B456008EEA42 /* CircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
+		6E5E86231F40B456008EEA42 /* CircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
+		6E5E86251F40B515008EEA42 /* CustomeTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeTabBar.h; sourceTree = "<group>"; };
+		6E5E86261F40B515008EEA42 /* CustomeTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeTabBar.m; sourceTree = "<group>"; };
+		6EAA4F1F1F500503007D2D33 /* LXFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFButton.h; sourceTree = "<group>"; };
+		6EAA4F201F500503007D2D33 /* LXFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFButton.m; sourceTree = "<group>"; };
+		6EAA4F221F500528007D2D33 /* BlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		6EAA4F231F500528007D2D33 /* BlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
+		6EAA4F281F500655007D2D33 /* CLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLViewController.h; sourceTree = "<group>"; };
+		6EAA4F291F500655007D2D33 /* CLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLViewController.m; sourceTree = "<group>"; };
+		6EAA4F2B1F501EDC007D2D33 /* CLTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTapGestureRecognizer.h; sourceTree = "<group>"; };
+		6EAA4F2C1F501EDC007D2D33 /* CLTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTapGestureRecognizer.m; sourceTree = "<group>"; };
+		6EAFD95D1F3C2A3B0077CF29 /* TouchEventLib-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TouchEventLib-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAFD9611F3C2A3B0077CF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EAFD9631F3C2A3B0077CF29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6EAFD9641F3C2A3B0077CF29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6EAFD9661F3C2A3B0077CF29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6EAFD9671F3C2A3B0077CF29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6EAFD96A1F3C2A3B0077CF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EAFD96C1F3C2A3B0077CF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EAFD96F1F3C2A3B0077CF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EAFD9711F3C2A3B0077CF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EAFD9761F3C2A3B0077CF29 /* TouchEventLib-masterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchEventLib-masterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAFD97A1F3C2A3B0077CF29 /* TouchEventLib_masterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventLib_masterTests.m; sourceTree = "<group>"; };
+		6EAFD97C1F3C2A3B0077CF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EAFD9811F3C2A3B0077CF29 /* TouchEventLib-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchEventLib-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAFD9851F3C2A3B0077CF29 /* TouchEventLib_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventLib_masterUITests.m; sourceTree = "<group>"; };
+		6EAFD9871F3C2A3B0077CF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EAFD9971F3C3C4A0077CF29 /* AView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
+		6EAFD9981F3C3C4A0077CF29 /* AView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
+		6EAFD9991F3C3C4A0077CF29 /* BView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BView.h; sourceTree = "<group>"; };
+		6EAFD99A1F3C3C4A0077CF29 /* BView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BView.m; sourceTree = "<group>"; };
+		6EAFD99B1F3C3C4A0077CF29 /* CView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CView.h; sourceTree = "<group>"; };
+		6EAFD99C1F3C3C4A0077CF29 /* CView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CView.m; sourceTree = "<group>"; };
+		6EAFD99D1F3C3C4A0077CF29 /* DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DView.h; sourceTree = "<group>"; };
+		6EAFD99E1F3C3C4A0077CF29 /* DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DView.m; sourceTree = "<group>"; };
+		6EAFD9A31F3C42760077CF29 /* EView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EView.h; sourceTree = "<group>"; };
+		6EAFD9A41F3C42760077CF29 /* EView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EView.m; sourceTree = "<group>"; };
+		6EAFD9A61F3C4ABC0077CF29 /* FView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FView.h; sourceTree = "<group>"; };
+		6EAFD9A71F3C4ABC0077CF29 /* FView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FView.m; sourceTree = "<group>"; };
+		6EF833211F4C00D600133DAD /* GLGusture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGusture.h; sourceTree = "<group>"; };
+		6EF833221F4C00D600133DAD /* GLGusture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGusture.m; sourceTree = "<group>"; };
+		6EFC61DA1F3ED93A00BE50AC /* MovedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovedView.m; sourceTree = "<group>"; };
+		6EFC61DB1F3ED93A00BE50AC /* MovedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovedView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EAFD95A1F3C2A3B0077CF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD9731F3C2A3B0077CF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD97E1F3C2A3B0077CF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4081411F4E7FA00057AF80 /* Gusture冲突 */ = {
+			isa = PBXGroup;
+			children = (
+				6E4081421F4E7FA00057AF80 /* BackView.h */,
+				6E4081431F4E7FA00057AF80 /* BackView.m */,
+				6E4081441F4E7FA00057AF80 /* GLButton.h */,
+				6E4081451F4E7FA00057AF80 /* GLButton.m */,
+				6E4081461F4E7FA00057AF80 /* GLCell.h */,
+				6E4081471F4E7FA00057AF80 /* GLCell.m */,
+				6E4081481F4E7FA00057AF80 /* GLTableView.h */,
+				6E4081491F4E7FA00057AF80 /* GLTableView.m */,
+				6E40814A1F4E7FA00057AF80 /* GLView.h */,
+				6E40814B1F4E7FA00057AF80 /* GLView.m */,
+				6E40814C1F4E7FA00057AF80 /* GLViewController.h */,
+				6E40814D1F4E7FA00057AF80 /* GLViewController.m */,
+				6E4081541F4E7FAE0057AF80 /* TouchEventHook.h */,
+				6E4081551F4E7FAE0057AF80 /* TouchEventHook.m */,
+			);
+			path = "Gusture冲突";
+			sourceTree = "<group>";
+		};
+		6E5986CA1F4D243E00DA7FFE /* GestureLib */ = {
+			isa = PBXGroup;
+			children = (
+				6E5986CC1F4D276500DA7FFE /* LXFViewController.h */,
+				6E5986CD1F4D276500DA7FFE /* LXFViewController.m */,
+				6E5986D21F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.h */,
+				6E5986D31F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.m */,
+				6E5986CF1F4D278C00DA7FFE /* YellowView.h */,
+				6E5986D01F4D278C00DA7FFE /* YellowView.m */,
+			);
+			path = GestureLib;
+			sourceTree = "<group>";
+		};
+		6E5E86211F40B375008EEA42 /* Event Intercept */ = {
+			isa = PBXGroup;
+			children = (
+				6E5E86221F40B456008EEA42 /* CircleButton.h */,
+				6E5E86231F40B456008EEA42 /* CircleButton.m */,
+				6E5E86251F40B515008EEA42 /* CustomeTabBar.h */,
+				6E5E86261F40B515008EEA42 /* CustomeTabBar.m */,
+			);
+			path = "Event Intercept";
+			sourceTree = "<group>";
+		};
+		6EAA4F181F5004A3007D2D33 /* UIControl Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6EAA4F281F500655007D2D33 /* CLViewController.h */,
+				6EAA4F291F500655007D2D33 /* CLViewController.m */,
+				6EAA4F1F1F500503007D2D33 /* LXFButton.h */,
+				6EAA4F201F500503007D2D33 /* LXFButton.m */,
+				6EAA4F221F500528007D2D33 /* BlueView.h */,
+				6EAA4F231F500528007D2D33 /* BlueView.m */,
+				6EAA4F2B1F501EDC007D2D33 /* CLTapGestureRecognizer.h */,
+				6EAA4F2C1F501EDC007D2D33 /* CLTapGestureRecognizer.m */,
+			);
+			path = "UIControl Lib";
+			sourceTree = "<group>";
+		};
+		6EAFD9541F3C2A3B0077CF29 = {
+			isa = PBXGroup;
+			children = (
+				6EAFD95F1F3C2A3B0077CF29 /* TouchEventLib-master */,
+				6EAFD9791F3C2A3B0077CF29 /* TouchEventLib-masterTests */,
+				6EAFD9841F3C2A3B0077CF29 /* TouchEventLib-masterUITests */,
+				6EAFD95E1F3C2A3B0077CF29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EAFD95E1F3C2A3B0077CF29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFD95D1F3C2A3B0077CF29 /* TouchEventLib-master.app */,
+				6EAFD9761F3C2A3B0077CF29 /* TouchEventLib-masterTests.xctest */,
+				6EAFD9811F3C2A3B0077CF29 /* TouchEventLib-masterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EAFD95F1F3C2A3B0077CF29 /* TouchEventLib-master */ = {
+			isa = PBXGroup;
+			children = (
+				6EAA4F181F5004A3007D2D33 /* UIControl Lib */,
+				6E5986CA1F4D243E00DA7FFE /* GestureLib */,
+				6E5E86211F40B375008EEA42 /* Event Intercept */,
+				6EFC61D91F3ED90500BE50AC /* MovedView */,
+				6E4081411F4E7FA00057AF80 /* Gusture冲突 */,
+				6EAFD9961F3C3C220077CF29 /* Hit_Test */,
+				6EAFD9631F3C2A3B0077CF29 /* AppDelegate.h */,
+				6EAFD9641F3C2A3B0077CF29 /* AppDelegate.m */,
+				6EAFD9661F3C2A3B0077CF29 /* ViewController.h */,
+				6EAFD9671F3C2A3B0077CF29 /* ViewController.m */,
+				6E56DE5D1F4976F9009A8905 /* GLApplication.h */,
+				6E56DE5E1F4976F9009A8905 /* GLApplication.m */,
+				6E56DE5A1F49710D009A8905 /* GLWindow.h */,
+				6E56DE5B1F49710D009A8905 /* GLWindow.m */,
+				6E56DE601F497FDF009A8905 /* GL2Window.h */,
+				6E56DE611F497FDF009A8905 /* GL2Window.m */,
+				6EF833211F4C00D600133DAD /* GLGusture.h */,
+				6EF833221F4C00D600133DAD /* GLGusture.m */,
+				6EAFD9691F3C2A3B0077CF29 /* Main.storyboard */,
+				6EAFD96C1F3C2A3B0077CF29 /* Assets.xcassets */,
+				6EAFD96E1F3C2A3B0077CF29 /* LaunchScreen.storyboard */,
+				6EAFD9711F3C2A3B0077CF29 /* Info.plist */,
+				6EAFD9601F3C2A3B0077CF29 /* Supporting Files */,
+			);
+			path = "TouchEventLib-master";
+			sourceTree = "<group>";
+		};
+		6EAFD9601F3C2A3B0077CF29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFD9611F3C2A3B0077CF29 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EAFD9791F3C2A3B0077CF29 /* TouchEventLib-masterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFD97A1F3C2A3B0077CF29 /* TouchEventLib_masterTests.m */,
+				6EAFD97C1F3C2A3B0077CF29 /* Info.plist */,
+			);
+			path = "TouchEventLib-masterTests";
+			sourceTree = "<group>";
+		};
+		6EAFD9841F3C2A3B0077CF29 /* TouchEventLib-masterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFD9851F3C2A3B0077CF29 /* TouchEventLib_masterUITests.m */,
+				6EAFD9871F3C2A3B0077CF29 /* Info.plist */,
+			);
+			path = "TouchEventLib-masterUITests";
+			sourceTree = "<group>";
+		};
+		6EAFD9961F3C3C220077CF29 /* Hit_Test */ = {
+			isa = PBXGroup;
+			children = (
+				6EAFD9971F3C3C4A0077CF29 /* AView.h */,
+				6EAFD9981F3C3C4A0077CF29 /* AView.m */,
+				6EAFD9991F3C3C4A0077CF29 /* BView.h */,
+				6EAFD99A1F3C3C4A0077CF29 /* BView.m */,
+				6EAFD99B1F3C3C4A0077CF29 /* CView.h */,
+				6EAFD99C1F3C3C4A0077CF29 /* CView.m */,
+				6EAFD99D1F3C3C4A0077CF29 /* DView.h */,
+				6EAFD99E1F3C3C4A0077CF29 /* DView.m */,
+				6EAFD9A31F3C42760077CF29 /* EView.h */,
+				6EAFD9A41F3C42760077CF29 /* EView.m */,
+				6EAFD9A61F3C4ABC0077CF29 /* FView.h */,
+				6EAFD9A71F3C4ABC0077CF29 /* FView.m */,
+			);
+			path = Hit_Test;
+			sourceTree = "<group>";
+		};
+		6EFC61D91F3ED90500BE50AC /* MovedView */ = {
+			isa = PBXGroup;
+			children = (
+				6EFC61DA1F3ED93A00BE50AC /* MovedView.m */,
+				6EFC61DB1F3ED93A00BE50AC /* MovedView.h */,
+			);
+			path = MovedView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EAFD95C1F3C2A3B0077CF29 /* TouchEventLib-master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAFD98A1F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-master" */;
+			buildPhases = (
+				6EAFD9591F3C2A3B0077CF29 /* Sources */,
+				6EAFD95A1F3C2A3B0077CF29 /* Frameworks */,
+				6EAFD95B1F3C2A3B0077CF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TouchEventLib-master";
+			productName = "TouchEventLib-master";
+			productReference = 6EAFD95D1F3C2A3B0077CF29 /* TouchEventLib-master.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EAFD9751F3C2A3B0077CF29 /* TouchEventLib-masterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAFD98D1F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-masterTests" */;
+			buildPhases = (
+				6EAFD9721F3C2A3B0077CF29 /* Sources */,
+				6EAFD9731F3C2A3B0077CF29 /* Frameworks */,
+				6EAFD9741F3C2A3B0077CF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EAFD9781F3C2A3B0077CF29 /* PBXTargetDependency */,
+			);
+			name = "TouchEventLib-masterTests";
+			productName = "TouchEventLib-masterTests";
+			productReference = 6EAFD9761F3C2A3B0077CF29 /* TouchEventLib-masterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EAFD9801F3C2A3B0077CF29 /* TouchEventLib-masterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAFD9901F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-masterUITests" */;
+			buildPhases = (
+				6EAFD97D1F3C2A3B0077CF29 /* Sources */,
+				6EAFD97E1F3C2A3B0077CF29 /* Frameworks */,
+				6EAFD97F1F3C2A3B0077CF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EAFD9831F3C2A3B0077CF29 /* PBXTargetDependency */,
+			);
+			name = "TouchEventLib-masterUITests";
+			productName = "TouchEventLib-masterUITests";
+			productReference = 6EAFD9811F3C2A3B0077CF29 /* TouchEventLib-masterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EAFD9551F3C2A3B0077CF29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = StockAccount;
+				TargetAttributes = {
+					6EAFD95C1F3C2A3B0077CF29 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					6EAFD9751F3C2A3B0077CF29 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6EAFD95C1F3C2A3B0077CF29;
+					};
+					6EAFD9801F3C2A3B0077CF29 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6EAFD95C1F3C2A3B0077CF29;
+					};
+				};
+			};
+			buildConfigurationList = 6EAFD9581F3C2A3B0077CF29 /* Build configuration list for PBXProject "TouchEventLib-master" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EAFD9541F3C2A3B0077CF29;
+			productRefGroup = 6EAFD95E1F3C2A3B0077CF29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EAFD95C1F3C2A3B0077CF29 /* TouchEventLib-master */,
+				6EAFD9751F3C2A3B0077CF29 /* TouchEventLib-masterTests */,
+				6EAFD9801F3C2A3B0077CF29 /* TouchEventLib-masterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EAFD95B1F3C2A3B0077CF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAFD9701F3C2A3B0077CF29 /* LaunchScreen.storyboard in Resources */,
+				6EAFD96D1F3C2A3B0077CF29 /* Assets.xcassets in Resources */,
+				6EAFD96B1F3C2A3B0077CF29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD9741F3C2A3B0077CF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD97F1F3C2A3B0077CF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EAFD9591F3C2A3B0077CF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAA4F2D1F501EDC007D2D33 /* CLTapGestureRecognizer.m in Sources */,
+				6E5E86271F40B515008EEA42 /* CustomeTabBar.m in Sources */,
+				6EFC61DC1F3ED93A00BE50AC /* MovedView.m in Sources */,
+				6E5986D41F4D5C2B00DA7FFE /* LXFTapGestureRecognizer.m in Sources */,
+				6EAFD9A21F3C3C4A0077CF29 /* DView.m in Sources */,
+				6EAA4F211F500503007D2D33 /* LXFButton.m in Sources */,
+				6EAA4F2A1F500655007D2D33 /* CLViewController.m in Sources */,
+				6E5986D11F4D278C00DA7FFE /* YellowView.m in Sources */,
+				6E4081531F4E7FA00057AF80 /* GLViewController.m in Sources */,
+				6E56DE5F1F4976F9009A8905 /* GLApplication.m in Sources */,
+				6E4081511F4E7FA00057AF80 /* GLTableView.m in Sources */,
+				6E5986CE1F4D276500DA7FFE /* LXFViewController.m in Sources */,
+				6E56DE621F497FDF009A8905 /* GL2Window.m in Sources */,
+				6E4081521F4E7FA00057AF80 /* GLView.m in Sources */,
+				6EAA4F241F500528007D2D33 /* BlueView.m in Sources */,
+				6E40814E1F4E7FA00057AF80 /* BackView.m in Sources */,
+				6E56DE5C1F49710D009A8905 /* GLWindow.m in Sources */,
+				6EAFD9681F3C2A3B0077CF29 /* ViewController.m in Sources */,
+				6EAFD9A81F3C4ABC0077CF29 /* FView.m in Sources */,
+				6EAFD9A51F3C42760077CF29 /* EView.m in Sources */,
+				6EAFD9A11F3C3C4A0077CF29 /* CView.m in Sources */,
+				6EAFD9651F3C2A3B0077CF29 /* AppDelegate.m in Sources */,
+				6EAFD9A01F3C3C4A0077CF29 /* BView.m in Sources */,
+				6EAFD99F1F3C3C4A0077CF29 /* AView.m in Sources */,
+				6E4081501F4E7FA00057AF80 /* GLCell.m in Sources */,
+				6EAFD9621F3C2A3B0077CF29 /* main.m in Sources */,
+				6E4081561F4E7FAE0057AF80 /* TouchEventHook.m in Sources */,
+				6EF833231F4C00D600133DAD /* GLGusture.m in Sources */,
+				6E40814F1F4E7FA00057AF80 /* GLButton.m in Sources */,
+				6E5E86241F40B456008EEA42 /* CircleButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD9721F3C2A3B0077CF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAFD97B1F3C2A3B0077CF29 /* TouchEventLib_masterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAFD97D1F3C2A3B0077CF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAFD9861F3C2A3B0077CF29 /* TouchEventLib_masterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EAFD9781F3C2A3B0077CF29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EAFD95C1F3C2A3B0077CF29 /* TouchEventLib-master */;
+			targetProxy = 6EAFD9771F3C2A3B0077CF29 /* PBXContainerItemProxy */;
+		};
+		6EAFD9831F3C2A3B0077CF29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EAFD95C1F3C2A3B0077CF29 /* TouchEventLib-master */;
+			targetProxy = 6EAFD9821F3C2A3B0077CF29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EAFD9691F3C2A3B0077CF29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAFD96A1F3C2A3B0077CF29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EAFD96E1F3C2A3B0077CF29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAFD96F1F3C2A3B0077CF29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EAFD9881F3C2A3B0077CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6EAFD9891F3C2A3B0077CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EAFD98B1F3C2A3B0077CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TouchEventLib-master/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6EAFD98C1F3C2A3B0077CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TouchEventLib-master/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-master";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6EAFD98E1F3C2A3B0077CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TouchEventLib-masterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-masterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchEventLib-master.app/TouchEventLib-master";
+			};
+			name = Debug;
+		};
+		6EAFD98F1F3C2A3B0077CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "TouchEventLib-masterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-masterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchEventLib-master.app/TouchEventLib-master";
+			};
+			name = Release;
+		};
+		6EAFD9911F3C2A3B0077CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TouchEventLib-masterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-masterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "TouchEventLib-master";
+			};
+			name = Debug;
+		};
+		6EAFD9921F3C2A3B0077CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TouchEventLib-masterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stockaccount.TouchEventLib-masterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "TouchEventLib-master";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EAFD9581F3C2A3B0077CF29 /* Build configuration list for PBXProject "TouchEventLib-master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAFD9881F3C2A3B0077CF29 /* Debug */,
+				6EAFD9891F3C2A3B0077CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAFD98A1F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAFD98B1F3C2A3B0077CF29 /* Debug */,
+				6EAFD98C1F3C2A3B0077CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAFD98D1F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-masterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAFD98E1F3C2A3B0077CF29 /* Debug */,
+				6EAFD98F1F3C2A3B0077CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAFD9901F3C2A3B0077CF29 /* Build configuration list for PBXNativeTarget "TouchEventLib-masterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAFD9911F3C2A3B0077CF29 /* Debug */,
+				6EAFD9921F3C2A3B0077CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EAFD9551F3C2A3B0077CF29 /* Project object */;
+}
