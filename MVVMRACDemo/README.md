@@ -2,7 +2,7 @@
 
 ## 浅谈MVVM双向绑定
 
-在上一篇[浅谈iOS架构模式]中谈到过MVVM，依靠ViewModel，实现了View与Model的完全解耦。ViewModel负责响应View产生的交互事件并更新Model，同时当Model发生变化时通知View进行界面刷新，前者称之为事件绑定，后者称之为数据绑定，这就是MVVM的双向绑定。
+在上一篇[浅谈iOS架构模式]()中谈到过MVVM，依靠ViewModel，实现了View与Model的完全解耦。ViewModel负责响应View产生的交互事件并更新Model，同时当Model发生变化时通知View进行界面刷新，前者称之为事件绑定，后者称之为数据绑定，这就是MVVM的双向绑定。
 
 双向绑定带来的直观开发体验是怎么样的？如果你有前端开发经验，并且对与React、Vue等前端响应式框架有一定了解，那你一定对双向绑定带来的开发效率上的提升深有感触。以下代码实现了Vue中输入框的双向绑定：
 
@@ -20,7 +20,7 @@
 
 一个简单的商品搜索场景：
 
-<img src="./prototype.png" alt="prototype" style="zoom:40%;" />
+<img src="http://lotheve.cn/blog/mvvmrac/prototype.png" alt="prototype" style="zoom:40%;" />
 
 原型组成：输入框、搜索按钮、商品表格。
 
