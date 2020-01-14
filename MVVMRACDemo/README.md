@@ -2,7 +2,7 @@
 
 ## 浅谈MVVM双向绑定
 
-在上一篇[浅谈iOS架构模式]()中谈到过MVVM，依靠ViewModel，实现了View与Model的完全解耦。ViewModel负责响应View产生的交互事件并更新Model，同时当Model发生变化时通知View进行界面刷新，前者称之为事件绑定，后者称之为数据绑定，这就是MVVM的双向绑定。
+在上一篇[浅谈MV(X)架构](<http://lotheve.cn/article/%E6%B5%85%E8%B0%88MV(X)%E6%9E%B6%E6%9E%84/>)中谈到过MVVM，依靠ViewModel，实现了View与Model的完全解耦。另外，**View(Cotroller)**与**ViewModel**实现了双向绑定，View产生事件时ViewModel能做出响应，ViewModel数据发生更新时，View能做出响应。
 
 双向绑定带来的直观开发体验是怎么样的？如果你有前端开发经验，并且对与React、Vue等前端响应式框架有一定了解，那你一定对双向绑定带来的开发效率上的提升深有感触。以下代码实现了Vue中输入框的双向绑定：
 
@@ -12,7 +12,7 @@
 
 `input`组件和`msg`变量已经实现了双向绑定，一切都被封装在框架里，输入框的内容和`msg`变量的值总是保持着同步更新。实际前端开发中更多的是依靠数据绑定以及事件绑定带来的开发效率的提升。依靠数据绑定，你只需把注意力集中在数据上，数据的改动会实时响应到界面的更新，完全屏蔽了组件界面更新的细节，开发体验就一个字：舒服！。由于天然的响应式架构设计以及申明式的编程范式，前端实现双向绑定是很简单的一件事。
 
-反观移动端，虽然先天并非响应式的开发模式，不过双向绑定的本质其实就是借助一些事件流处理机制，对数据更新事件或者视图交互事件进行同步响应。因此即便没有响应式框架带来的遍历，在iOS中，我们可以借助KVO、delegate、notification等事件流机制实现视图与数据的双向绑定，只是实现上并不优雅。然而借助一些开源响应式框架，例如RxJava、ReactiveCocoa（RAC）、RxSwift，可以说是为移动端的MVVM实现双向绑定铺平了道路。
+反观移动端，虽然先天并非响应式的开发模式，不过双向绑定的本质其实就是借助一些事件流处理机制，对数据更新事件或者视图交互事件进行同步响应。因此即便没有响应式框架带来的遍历，在iOS中，我们可以借助KVO、delegate、notification等事件流机制实现视图与数据（这个数据指ViewModel中的数据）的双向绑定，只是实现上并不优雅。然而借助一些开源响应式框架，例如RxJava、ReactiveCocoa（RAC）、RxSwift，可以说是为移动端的MVVM实现双向绑定铺平了道路。
 
 在本篇的下面章节，我会以一个简单的场景，分别就"不依靠RAC"和"依靠RAC"来实现iOS中MVVM的双向绑定做一个实践对比。本篇不会涉及RAC具体实现的讲解，这是一个非常值得研究的FRP（函数响应式编程）框架（奈何笔者目前还没渗透）。
 
@@ -28,11 +28,11 @@
 
 需求很简单，根据MVVM的设计要求，需要建立如下实体：
 
-+ GoodSearchViewController：商品搜索控制器及相关视图
-+ GoodSearchViewModel：商品搜索VM
-+ GoodCell：商品项视图
-+ GoodViewModel：商品项VM
-+ GoodModel：商品模型
+- GoodSearchViewController：商品搜索控制器及相关视图
+- GoodSearchViewModel：商品搜索VM
+- GoodCell：商品项视图
+- GoodViewModel：商品项VM
+- GoodModel：商品模型
 
 本篇重点讨论的是MVVM的双向绑定，关于MVVM的设计模式不再赘述（关于本例基本结构代码已在Demo中给出，Demo地址见文章开头，下面内容强烈建议结合代码理解）。该场景主要考虑如下事件及数据的绑定：
 
@@ -47,7 +47,7 @@
 
 所谓绑定，说白了其实当事件发生的时候，监听该事件的内容可以做出相应，也就是事件的传递。iOS中，处理事件流的方式有多种，根据不同场景可以选择KVO、Notification、Delegate、Block、Target-Action。通过这些事件流机制，就能实现MVVM的双向绑定：
 
-+ 绑定输入框输入事件
+- 绑定输入框输入事件
 
     ```objc
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChangeNotification:) name:UITextFieldTextDidChangeNotification object:_searchTextField];
@@ -61,7 +61,7 @@
 
     通过Notification监听输入框的输入事件，当输入发生变化时，同步修改`searchViewModel`的`searchKey`，从而实现对输入框输入事件的响应，完成事件绑定。
 
-+ 绑定搜索按钮点击事件
+- 绑定搜索按钮点击事件
 
     ```objc
     [_searchBtn addTarget:self action:@selector(actionSearch:) forControlEvents:UIControlEventTouchUpInside];
@@ -74,7 +74,7 @@
 
     通过Target-Action绑定搜索按钮事件，当按钮点击时，`searchViewModel`执行`searchGoods`进行商品搜索。
 
-+ 绑定`GoodSearchViewModel`的`searchEnable`属性
+- 绑定`GoodSearchViewModel`的`searchEnable`属性
 
     ```objc
     [self.searchViewModel addObserver:self forKeyPath:@"searchEnable" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:NULL];
@@ -90,7 +90,7 @@
 
     借助KVO，实现了对`searchViewModel`中`searchEnable`属性的监听。因为要求输入框内容为空时，搜索框是不可点击的，需要将`enabled`置为NO。通过监听属性同步对按钮可点击状态进行修改，即实现对该数据的绑定。
 
-+ 绑定`GoodSearchViewModel`的`needRefresh`属性
+- 绑定`GoodSearchViewModel`的`needRefresh`属性
 
     ```objc
     [self.searchViewModel addObserver:self forKeyPath:@"needRefresh" options:NSKeyValueObservingOptionNew context:NULL];
@@ -124,7 +124,7 @@ RAC（ReactiveCocoa），一个函数响应式编程框架，MVVM结合该框架
 
 下面使用RAC对上面各种招式进行改造：
 
-+ 绑定输入框输入事件
+- 绑定输入框输入事件
 
     ```objc
     RAC(self.searchViewModel, searchKey) = [self.searchTextField rac_textSignal];
@@ -132,7 +132,7 @@ RAC（ReactiveCocoa），一个函数响应式编程框架，MVVM结合该框架
 
     额，都在这里了。订阅了输入框的`rac_textSignal`信号，当输入框执行输入时，同步对`searchViewModel`的`searchKey`进行修改。效果和上面使用Notification是一样的！
 
-+ 绑定搜索按钮事件
+- 绑定搜索按钮事件
 
     ```objc
     [[self.searchBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
@@ -143,7 +143,7 @@ RAC（ReactiveCocoa），一个函数响应式编程框架，MVVM结合该框架
 
     绑定按钮点击事件，事件发生时`searchViewModel`执行商品搜索。
 
-+ 绑定`GoodSearchViewModel`的`searchEnable`属性
+- 绑定`GoodSearchViewModel`的`searchEnable`属性
 
     ```objc
     RAC(self.searchBtn, enabled, @(NO)) = RACObserve(self, searchViewModel.searchEnable);
@@ -151,7 +151,7 @@ RAC（ReactiveCocoa），一个函数响应式编程框架，MVVM结合该框架
 
     将`searchBtn`的可点击状态与`searchViewModel`的`searchEnable`属性绑定，同时默认置为NO。
 
-+ 绑定`GoodSearchViewModel`的`needRefresh`属性
+- 绑定`GoodSearchViewModel`的`needRefresh`属性
 
     ```objc
     [[RACObserve(self, searchViewModel.needRefresh) filter:^BOOL(NSNumber * _Nullable value) {
@@ -165,7 +165,7 @@ RAC（ReactiveCocoa），一个函数响应式编程框架，MVVM结合该框架
 
     绑定`needRefresh`属性，当监听到需要刷新，控制器对表格的刷新。
 
-+ 商品Cell参数的绑定
+- 商品Cell参数的绑定
 
     当前商品Cell中展示的数据在列表滑动过程中是手动更新，即每次更新商品的ViewModel并取相关数据进行展示。借助RAC，可以实现Cell中相关视图的内容与ViewModel中数据的绑定：
 
@@ -273,9 +273,7 @@ self.searchBtn.rac_command = self.searchViewModel.searchCommand;
 }];
 ```
 
-大功告成！通过将signal改造成command，一共节省了两个状态变量（`searchEnable`，`searchEnable`）和一个事件方法（`searchGoods`），同时减少了这些状态变量的绑定，代码进一步得到了精简。最终实现的效果如下：
-
-<img src="http://lotheve.cn/blog/mvvmrac/mvvmrac.gif" alt="mvvm" style="zoom:40%;" />
+大功告成！通过将signal改造成command，一共节省了两个状态变量（`searchEnable`，`searchEnable`）和一个事件方法（`searchGoods`），同时减少了这些状态变量的绑定，代码进一步得到了精简。最终实现效果请查看Demo。
 
 ## 总结
 
